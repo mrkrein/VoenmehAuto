@@ -1,0 +1,245 @@
+.App {
+  cursor: none;
+}
+.App button {
+  @apply cursor-none !important;
+}
+
+/* Header */
+.header {
+  @apply py-6 sticky top-0 z-50;
+  background-color: #F9F6F6;
+}
+.header-wrp {
+  @apply flex justify-between;
+}
+.header-menu {
+  @apply flex;
+}
+.auth-btn {
+  @apply ml-20 px-4 py-1 font-medium bg-secondary text-white rounded-lg;
+}
+.auth-btn:hover {
+  @apply  bg-primary text-white transition-colors;
+}
+.menu-nav a {
+  @apply transition-all border-b-2 border-transparent;
+}
+.menu-nav a:hover {
+  @apply text-primary border-primary;
+}
+.menu-nav a {
+  @apply px-4 py-3;
+}
+
+
+/* Section Title */
+.sec-title {
+  @apply text-3xl font-bold mb-10 mt-20;
+}
+
+/* Hero */
+.hero-wrp {
+  @apply flex bg-con_block rounded-[40px] justify-between mb-10 h-[400px];
+}
+.hero-left {
+  @apply text-4xl font-bold uppercase w-1/2 flex flex-col justify-center space-y-5 p-10;
+}
+.hero-right {
+  @apply w-1/2 relative;
+}
+.hero-right img {
+  @apply w-full h-full object-cover absolute -right-16;
+}
+.hero-btn {
+  @apply py-3 px-5 text-white rounded-lg text-xl uppercase bg-secondary font-medium w-1/2;
+}
+.hero-btn:hover {
+  @apply bg-primary transition-all;
+}
+
+/* Group Section */
+.groups-title {
+  @apply text-3xl font-bold mb-5;
+}
+.groups-description {
+  @apply text-xl font-bold;
+}
+.groups-wrp {
+  @apply p-10 bg-cover  bg-[url('group.jpg')] rounded-[40px] bg-no-repeat bg-[center_bottom_-40rem] text-white ;
+}
+
+/* Transmittion Section */
+.trs-content {
+  @apply flex text-white space-x-10;
+}
+.trs-title-v {
+  @apply absolute top-[35%] -left-[10%] -rotate-90 font-bold text-5xl;
+}
+.left-content-wrp {
+  @apply absolute bottom-0 p-10;
+}
+.trs-title {
+  @apply mb-8 text-4xl font-bold;
+}
+.trs-price {
+  @apply text-3xl font-bold;
+}
+.trs-description {
+  @apply text-xl font-bold;
+}
+.right-content {
+  @apply max-w-xl h-full;
+}
+.right-content, .left-content {
+  @apply relative rounded-[40px];
+}
+.right-content img, .left-content img {
+  @apply rounded-[40px];
+}
+
+/* Step Card */
+.steps-grd-wrp {
+  @apply grid grid-cols-3 gap-12;
+}
+.step-card {
+  @apply bg-white rounded-[40px];
+}
+.step-card .card-body {
+  @apply p-10;
+}
+.step-card .card-title {
+  @apply font-bold text-3xl mb-5;
+}
+.step-card .card-num {
+  @apply text-5xl font-black text-primary w-full text-end;
+}
+
+/* Teatchers Section */
+.teatchers-grd-wrp {
+  @apply grid grid-cols-3 gap-10;
+}
+.teatchers-card {
+  @apply bg-white rounded-[40px];
+}
+.teatchers-card .card-body {
+  @apply flex;
+}
+.teatchers-card .card-right {
+  @apply flex flex-col justify-center p-5;
+}
+.teatchers-card .card-title {
+  @apply my-6 text-xl font-bold;
+}
+.teatchers-card .card-img {
+  @apply w-full;
+}
+.teatchers-card .card-img img {
+  @apply rounded-l-[40px] w-full h-full object-cover;
+}
+
+/* Reviews Section */
+
+/* Contact Section */
+.contact {
+  @apply mb-10
+}
+.contact-wrp {
+  @apply flex justify-between space-x-10;
+}
+.con-right form input, .con-right form label {
+  @apply block;
+}
+.con-right form input {
+  @apply border-b border-gray-200 w-full mb-5;
+}
+.con-right form input:focus {
+  @apply border-b border-secondary;
+}
+.con-right form label {
+  @apply mb-2;
+}
+.con-left {
+  @apply bg-gray-200 w-2/3 rounded-[40px] p-10 flex justify-center;
+}
+.con-left .con-text {
+  @apply text-5xl font-bold;
+}
+.con-left .con-text span {
+  @apply text-primary;
+}
+.con-right {
+  @apply bg-white w-1/3 rounded-[40px] p-10;
+}
+.con-right .con-form-title {
+  @apply text-2xl font-bold mb-5;
+}
+
+/* Footer */
+footer {
+  @apply bg-white py-10;
+}
+.footer-wrp {
+  @apply flex justify-between align-middle;
+}
+.menu-nav {
+  @apply flex space-x-5 font-medium;
+}
+.btn {
+  @apply py-3 px-5 bg-primary text-white rounded-lg;
+}
+
+.tickets a {
+  @apply w-14 h-14 text-blue-500 float-left bg-gray-200 rounded-lg leading-[3.3rem] text-center ml-2.5 mb-2.5;
+}
+.question-list a {
+  @apply text-blue-500;
+}
+.question-list ul {
+  @apply space-y-3;
+}
+.szh-accordion__item-heading{
+  @apply inline font-medium text-lg;
+}
+.szh-accordion__item-heading:hover {
+  @apply text-blue-500 cursor-pointer;
+}
+.svg-faq {
+  display: initial;
+}
+
+
+/* Exam */
+.exam-questions {
+  @apply flex space-x-2.5;
+}
+.exam-questions .exam-question {
+  @apply w-8 h-8  text-blue-500 float-left bg-gray-200 rounded-lg leading-[2rem] text-center mb-2.5;
+}
+.ticket-title, .ticket-question {
+  @apply text-2xl font-medium mb-5;
+}
+.ticket-question {
+  @apply border-b border-i_muted pb-5;
+}
+.exam-timer {
+  @apply flex space-x-2 my-5;
+}
+.exam-timer ion-icon {
+  @apply text-[24px];
+}
+.exam-ticket {
+  @apply bg-gray-200 rounded-lg p-5;
+}
+.exam-ticket .ticket-img img {
+  @apply w-full object-cover rounded-lg;
+}
+.exam-ticket .ticket-img {
+  @apply mb-5;
+}
+.ticket-answers .ticket-answer {
+  @apply mb-5 font-medium;
+}
+.ticket-bottom {
+  @apply flex justify-end;
+}
